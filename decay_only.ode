@@ -1,0 +1,11 @@
+#Degradation only model
+
+#initial condition
+init y = 10
+
+#decay constant
+par gamma = 0.1
+
+y'=-gamma*y
+
+done
