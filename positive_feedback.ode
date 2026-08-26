@@ -1,8 +1,8 @@
 
-# Model for positive feedback with basal production
+# Model for positive feedback 
 
 # ODEs
- Y' =  ((a*Y^n)/(K + Y^n)) - g*Y
+ Y' =  ((a*Y^n)/(K^n + Y^n)) - g*Y
 
 # Parameter values
 param g = 1, n = 4,  a = 10, K = 2   
