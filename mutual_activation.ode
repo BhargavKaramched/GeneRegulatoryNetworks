@@ -1,0 +1,15 @@
+
+# Model for mutual activation
+
+# ODEs
+ X' = ((a1*Y^n)/(K1^n + Y^n))-g1*X
+ Y' =  ((a2*X^n)/(K2^n + X^n)) - g2*Y
+
+# Parameter values
+param g1 = 1, n = 4,  a1 = 10, K1 = 2
+param g2 = 1, a2 = 10, K2 =2   
+
+# Initial conditions
+init Y=1, X=5
+
+done
