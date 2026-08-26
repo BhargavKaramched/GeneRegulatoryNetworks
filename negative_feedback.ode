@@ -1,0 +1,13 @@
+
+# Model for negative feedback
+
+# ODEs
+ Y' =  ((a*K^n)/(K^n + Y^n)) - g*Y
+
+# Parameter values
+param g = 1, n = 4,  a = 10, K = 2   
+
+# Initial conditions
+init Y=0.5
+
+done
