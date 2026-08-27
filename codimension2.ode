@@ -1,0 +1,16 @@
+# Positive_Feedback.ode
+#
+# Model for positive feedback with basal production
+
+# ODEs
+ Y' = b + ((a*Y^n)/(K + Y^n)) - g*Y
+
+# Parameter values
+param g = 1, n = 4, b = 1, a = 10, K = 2   
+
+# Initial conditions
+init Y=0.5
+
+
+#This tells XPPAUT the code is over
+done
