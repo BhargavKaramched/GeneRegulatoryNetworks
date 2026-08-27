@@ -3,13 +3,13 @@
 # Model for positive feedback with basal production
 
 # ODEs
- Y' = b + ((a*Y^n)/(K + Y^n)) - g*Y
+ Y' = b + ((a*Y^n)/(K^n + Y^n)) - g*Y
 
 # Parameter values
-param g = 1, n = 4, b = 1, a = 10, K = 2   
+param g = 8.2, n = 4, b = 5, a = 10, K = 1.189   
 
 # Initial conditions
-init Y=0.5
+init Y=1.5
 
 
 #This tells XPPAUT the code is over
