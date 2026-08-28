@@ -1,0 +1,29 @@
+# XPPAUT: Toggle Switch 
+
+# ODEs 
+x' = alpha1*K1^n/(K1^n + y^n) - gamma1*x
+y' = alpha2*K2^n/(K2^n + x^n) - gamma2*y
+
+# Parameters
+param alpha1=10, alpha2=10, n=1
+param K1=1.189, K2=1.189, gamma1=1, gamma2=1
+
+# Initial conditions
+init x=3, y=1
+
+# Initial time step, maximum step size, and total time
+@ total=100, dt=0.05, dtmax = 1,  
+
+# Maximum and Minimum values on axes
+@ xmin=0, xmax=15, ymin=0, ymax=15
+
+# What to display on the x- axis and y- axis
+@ xp=t, yp=y
+
+# Parameters for XPPAUT 
+# Method used and error tolerance 
+@ meth=cvode, toler=1.0e-10, atoler=1.0e-10
+
+
+#This tells XPPAUT the code ends here
+done
