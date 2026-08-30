@@ -1,0 +1,15 @@
+# DDE model 
+y' = alpha1 / (1 + delay(y, tau)^n) - gamma1*y
+
+# Parameters
+param alpha1=10, n=4, gamma1=1, tau=2
+
+# Initial condition (held constant for t in [-tau, 0])
+init y=1.5
+
+# Numerical & Plotting Options
+# Note: 'delay=10' sets the maximum memory buffer size (must be >= tau)
+@ total=30, dt=0.05, meth=qualrk, delay=10
+@ yp=y, xp=t, xlo=0, xhi=30, ylo=0, yhi=4
+
+done

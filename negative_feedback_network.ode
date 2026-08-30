@@ -1,0 +1,14 @@
+# Model for a network with negative feedback
+
+# ODEs
+ X' =  ((a1*K1^n)/(K1^n + Y^n)) - g1*X
+ Y' = ((a2*X^n)/(K2^n + X^n)) - g2*Y
+
+# Parameter values
+param g1 = 2, n = 4,  a1 = 10, K1 = 2   
+param g2 = 2, a2 = 10, K2 = 2
+
+# Initial conditions
+init Y=5 X = 5
+
+done
