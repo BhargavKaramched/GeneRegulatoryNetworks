@@ -16,3 +16,5 @@ toggle.ode is an ODE file that encodes the dynamical equations for the toggle sw
 negative_feedback_network.ode is an ODE file that encodes the activator repressor motif
 
 dnf.ode is an ODE file that encodes the delayed negative feedback oscillator
+
+The Exploration__.m files are MATLAB files that you can run to answer some of the Exploration exercises in the book.
