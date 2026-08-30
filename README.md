@@ -11,4 +11,8 @@ mutual_activation.ode is an ODE file that encodes a two-node system where the no
 
 positive_feedback_basal.ode is an ODE file that encodes positive feedback with an increasing Hill function, linear degradation, and an additive constant for basal production for a single protein species.
 
-toggle.ode is and ODE file that encodes the dynamical equations for the toggle switch
+toggle.ode is an ODE file that encodes the dynamical equations for the toggle switch
+
+negative_feedback_network.ode is an ODE file that encodes the activator repressor motif
+
+dnf.ode is an ODE file that encodes the delayed negative feedback oscillator
